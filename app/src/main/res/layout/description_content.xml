@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="   The iPhone X is intended to showcase what Apple considers technologyof the future, specifically adopting OLED screen technology for the first time in iPhone history, as well as using a glass and stainless-steel form factor, offering wireless charging, and removing the home button in favor of introducing Face ID, a new authentication method using advanced technologies to scan the user's face to unlock the device, as well as for the use of animated emojis called Animoji. "
+        android:maxLines="10"
+        android:background="#e4f9cb"/>
+
+</RelativeLayout>

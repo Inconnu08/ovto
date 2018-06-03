@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bggrad">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/a"
+        android:gravity="center"
+        android:background="@drawable/bggrad"
+        android:tint="@color/white"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_dialog_dislike"
+        android:background="@drawable/ic_thumb_down"
+        android:paddingBottom="5dp"
+        android:textColor="#ffffffff"
+        android:backgroundTint="#eee"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/a"
+        android:layout_alignEnd="@+id/text_dialog"
+        android:layout_marginEnd="73dp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_dialog_like"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/ic_thumb_up"
+        android:textColor="#ffffffff"
+        android:paddingBottom="14dp"
+        android:backgroundTint="#eee"
+        android:layout_alignBaseline="@+id/btn_dialog_dislike"
+        android:layout_alignBottom="@+id/btn_dialog_dislike"
+        android:layout_alignStart="@+id/text_dialog"
+        android:layout_marginStart="71dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TEXT"
+        android:id="@+id/text_dialog"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/btn_dialog_like"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

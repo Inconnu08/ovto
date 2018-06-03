@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context="application.taufiqrahman.com.ovto.EditProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:background="@drawable/bggrad"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Settings"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#eee">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="#eee">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#BDBDBD"
+                android:layout_below="@+id/motto"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/label_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLines="1"
+                android:text="Name"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/divider"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Shameem parvez"
+                android:ems="10"
+                android:layout_below="@+id/label_name"
+                android:layout_alignParentStart="true"
+                android:id="@+id/editText"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/label_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLines="1"
+                android:text="Phone"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/editText"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_below="@+id/label_phone"
+                android:id="@+id/editText2"
+                android:text="01735949301"
+                android:imeOptions="actionNext"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/label_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLines="1"
+                android:text="Address"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/editText2"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_below="@+id/label_address"
+                android:id="@+id/editText3"
+                android:text="Chor rasta, pasta, Bashundhara R/A"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/motto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLines="1"
+                android:text="Edit profile"
+                android:textSize="24sp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/cardView_heart1"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/bSearch"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Save"
+                android:textSize="18sp"
+                android:textColor="#eee"
+                android:background="@drawable/rnd_gradiant_bg"
+                android:layout_below="@+id/editText3"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/floatingActionButton"
+                android:src="@drawable/ic_camera"
+                android:backgroundTint="@color/colorPrimary"
+                android:tint="#eee"
+                android:layout_above="@+id/motto"
+                android:layout_alignEnd="@+id/bSearch"
+                android:layout_marginEnd="37dp" />
+
+            <ImageView
+                android:id="@+id/cardView_heart1"
+                android:layout_width="120dp"
+                android:src="@drawable/userdp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>

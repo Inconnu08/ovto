@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_review"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="application.taufiqrahman.com.ovto.ReviewActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp">
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#BDBDBD"/>
+
+            <ImageView
+                android:id="@+id/cardView_heart11"
+                android:layout_width="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/brand_logo"
+                android:layout_alignParentStart="true"
+                android:layout_height="47dp" />
+
+            <TextView
+                android:id="@+id/cardView_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="1dp"
+                android:maxLines="1"
+                android:text="Arif khan"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/cardView_heart11"
+                android:textSize="25sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/cardView_location1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="100"
+                android:text="Simply the worst quality..."
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/ratingBar21"
+                android:layout_alignStart="@+id/ratingBar21"
+                android:paddingBottom="20dp"/>
+
+            <RatingBar
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar21"
+                style="@android:style/Widget.Material.RatingBar.Small"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:max="5"
+                android:rating="2"
+                android:layout_width="88dp"
+                android:isIndicator="false"
+                android:minHeight="0dp"
+                android:nestedScrollingEnabled="true"
+                android:minWidth="0dp"
+                android:maxHeight="15dp"
+                android:maxWidth="6dp"
+                android:clickable="false"
+                android:progressTint="@color/colorPrimary"
+                android:layout_below="@+id/cardView_name1"
+                android:layout_alignStart="@+id/cardView_name1" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_below="@+id/ratingBar"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/likeAmount"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#BDBDBD"/>
+
+            <ImageView
+                android:id="@+id/cardView_heart1"
+                android:layout_width="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/brand_logo"
+                android:layout_alignParentStart="true"
+                android:layout_height="47dp" />
+
+            <TextView
+                android:id="@+id/cardView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="1dp"
+                android:maxLines="1"
+                android:text="Shamin Parvez"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/cardView_heart1"
+                android:textSize="25sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black" />
+
+            <RatingBar
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar2"
+                style="@android:style/Widget.Material.RatingBar.Small"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:max="5"
+                android:rating="10"
+                android:layout_width="85dp"
+                android:isIndicator="false"
+                android:minHeight="0dp"
+                android:nestedScrollingEnabled="true"
+                android:minWidth="0dp"
+                android:maxHeight="15dp"
+                android:maxWidth="86dp"
+                android:clickable="false"
+                android:progressTint="@color/colorPrimary"
+                android:layout_alignBottom="@+id/cardView_heart1"
+                android:layout_alignStart="@+id/cardView_name" />
+
+            <TextView
+                android:id="@+id/cardView_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="100"
+                android:text="Simply the best taste at a fairly cheap price!"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/ratingBar2"
+                android:layout_alignStart="@+id/ratingBar2"
+                android:paddingBottom="20dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.Material.RatingBar.Small"
+        android:rating="4.0"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:padding="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:progressTint="@color/colorPrimary"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="4.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Food quality"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:paddingTop="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"
+        android:text="Service"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="20dp"
+        android:paddingTop="15dp"
+        android:layout_alignBaseline="@+id/like"
+        android:layout_alignBottom="@+id/like"
+        android:layout_toEndOf="@+id/like" />
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:src="@drawable/ic_thumb_up"
+        android:layout_height="20dp"
+        android:tint="@color/colorPrimary"
+        android:layout_above="@+id/card_view"
+        android:layout_alignStart="@+id/dislike"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/dislikeAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"
+        android:text="90%"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/dislike"
+        android:layout_alignEnd="@+id/dislike" />
+
+    <TextView
+        android:id="@+id/Environment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Environment"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:paddingTop="15dp"
+        android:layout_above="@+id/dislikeAmount"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="14dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:src="@drawable/ic_thumb_up"
+        android:layout_height="20dp"
+        android:tint="@color/colorPrimary"
+        android:layout_below="@+id/Environment"
+        android:layout_alignEnd="@+id/textView2"
+        android:id="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/env"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="90%"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/card_view"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/foodPricing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:maxLines="1"
+        android:text="Food pricing"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:paddingTop="15dp"
+        android:layout_alignEnd="@+id/view2"
+        android:layout_alignBottom="@+id/Environment" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:src="@drawable/ic_thumb_up"
+        android:layout_height="20dp"
+        android:tint="@color/colorPrimary"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/foodPricing"
+        android:layout_alignStart="@+id/foodPricing"
+        android:layout_marginStart="9dp" />
+
+    <TextView
+        android:id="@+id/foodprc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="95%"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/card_view"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:src="@drawable/ic_thumb_up"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:tint="@color/colorPrimary"
+        android:layout_below="@+id/dislike"
+        android:layout_alignStart="@+id/view2" />
+
+    <TextView
+        android:id="@+id/likeAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:maxLines="1"
+        android:text="80%"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#BDBDBD"
+        android:id="@+id/view2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

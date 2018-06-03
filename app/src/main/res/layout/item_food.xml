@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp"
+            android:background="#eee">
+
+            <TextView
+                android:id="@+id/cardView_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cardView_name"
+                android:layout_below="@+id/cardView_name"
+                android:maxLines="1"
+                android:text="Dhanmondi, Dhaka"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/cardView_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView_location"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/sample_image"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#BDBDBD"/>
+
+            <ImageView
+                android:id="@+id/cardView_heart1"
+                android:layout_width="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/brand_logo"
+                android:layout_alignParentStart="true"
+                android:layout_height="47dp" />
+
+            <TextView
+                android:id="@+id/cardView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="1dp"
+                android:maxLines="1"
+                android:text="Pizza Hut"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/cardView_heart1"
+                android:textSize="25sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/circle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="4.0"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/circle_background_views"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginEnd="11dp"
+                android:layout_below="@+id/divider"
+                android:layout_alignEnd="@+id/divider" />
+
+            <RatingBar
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar2"
+                style="@android:style/Widget.Material.RatingBar.Small"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:max="5"
+                android:rating="10"
+                android:layout_width="88dp"
+                android:isIndicator="false"
+                android:minHeight="0dp"
+                android:nestedScrollingEnabled="true"
+                android:minWidth="0dp"
+                android:maxHeight="15dp"
+                android:maxWidth="6dp"
+                android:clickable="false"
+                android:layout_alignBottom="@+id/cardView_heart1"
+                android:layout_alignParentEnd="true"
+                android:progressTint="@color/colorPrimary"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
